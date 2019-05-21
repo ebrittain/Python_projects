@@ -2,7 +2,7 @@ import sys, random, argparse
 import numpy as np
 import math
 import turtle
-from fractions import gcd
+from math import gcd
 
 
 class Spiro:
@@ -85,6 +85,7 @@ def main():
         turtle.setup(width=0.8)
         turtle.title('Spirographs')
         spiroAnim = SpiroAnimator()
+        turtle.exitonclick()
         turtle.mainloop()
 
 if __name__ == '__main__':
